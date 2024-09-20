@@ -5,12 +5,10 @@
   <meta charset="UTF-8" />
   <link rel="icon" href="asset/img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>一只会飞的旺旺</title>
+  <title>短链接映射器</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
   <style>
     body {
-      background: url('https://i0.wp.com/wangwangit001.cachefly.net/wangwangit/image/master/img/%E6%B5%8B%E8%AF%952.jpg') center/cover fixed;
-      /* 设置背景图片 */
       font-family: 'Arial', sans-serif;
       /* 设置默认字体 */
       color: #333;
@@ -102,11 +100,11 @@
 <body>
   <main>
     <div class="container">
-      <h1 class="text-3xl font-bold text-gray-800">一只会飞的旺旺</h1>
+      <h1 class="text-3xl font-bold text-gray-800">短链接生成装置</h1>
       <div x-data="app" x-cloak>
         <p x-show.transition.opacity="alert" :class="alert?.type" x-text="alert?.message"></p>
         <div class="mb-4">
-          <input placeholder="输入要缩短的网址..." x-model="url" x-ref="url"
+          <input placeholder="输入原网址..." x-model="url" x-ref="url"
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline" />
         </div>
         <details class="mb-4 border border-gray-300 rounded-md">
@@ -136,7 +134,7 @@
     </div>
   </main>
   <footer class="text-gray-600">
-      <a href="https://www.wangwangit.com">一只会飞的旺旺</a>
+      <!--<a href="https://www.wangwangit.com">一只会飞的旺旺</a>-->
   </footer>
 
   <script src="asset/js/alpine.js"></script>
